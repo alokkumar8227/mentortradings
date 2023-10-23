@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="responsive/grid.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+     <!-- Tailwind Header : Start  -->
+     <header class="glass-border z-50 sticky top-0">
+        <nav
+          class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-600"
+        >
+          <div>
+            <a
+              class="font-bold text-green-800 max-sm:pt-4 text-xl md:text-3xl"
+              href="#"
+            >
+              MentorTrading
+            </a>
+          </div>
+  
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="menu-button"
+            class="h-8 w-8 cursor-pointer md:hidden block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+  
+          <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+            <ul
+              class="pt-4 text-base text-gray-600 md:flex md:justify-between md:pt-0"
+            >
+              <li>
+                <a class="md:p-4 py-2 block hover:text-green-400" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="md:p-4 py-2 block hover:text-green-400" href="index.html/#book"
+                  >Books</a
+                >
+              </li>
+              <li>
+                <a class="md:p-4 py-2 block hover:text-green-400" href="#">Order</a>
+              </li>
+              <li class="md:m-4  block">
+                <a 
+                  class="rounded-2xl p-2 px-4 text-white font-bold bg-gradient-to-r  from-green-600 hover:from-green-800 to-green-800 hover:to-green-600"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Header : End  -->
+
+    <div id="book" class="book-details  md:p-10 glass grid md:grid-cols-2 justify-center items-center">
+        <div class="book-image max-sm:p-5 ">
+          <!-- <img class="w-3/4 rounded-3xl m-auto " src="https://static-media.hotmart.com/AsmvLJ0DUrSNYCa0Lr7J4or-vik=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/8a186667-812a-49bb-a023-be153dc57537/EbookCoverv1.jpg?w=920" alt="TradingBook"> -->
+          <div class = "w-full product-div-left">
+            <div class = "img-container">
+                <img class="  w-40" src = "src/images/w1.png" alt = "watch">
+            </div>
+            <div class = "hover-container">
+                <div class="outline outline-1 outline-gray-200 p-4 hover:shadow-lg  rounded-xl "><img src = "src/images/w1.png"></div>
+                <div class="outline outline-1 outline-gray-200 p-4 hover:shadow-lg  rounded-xl"><img src = "src/images/w2.png"></div>
+                <div class="outline outline-1 outline-gray-200 p-4 hover:shadow-lg  rounded-xl"><img src = "src/images/w4.png"></div>
+                <div class="outline outline-1 outline-gray-200 p-4 hover:shadow-lg  rounded-xl"><img src = "src/images/w5.png"></div>
+            </div>
+        </div>
+        </div>
+  
+        <div class="col-2 p-10 my-5 text-gray-700">
+          <div class="details">
+            <h2 class="font-black text-5xl max-sm:text-center  text-gray-900">Smart Trading</h2>
+            <p class="font-bold text-xl py-4">Details</p>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint et necessitatibus, ratione, nostrum molestiae, ipsum commodi reiciendis nemo assumenda fuga consequuntur asperiores itaque natus ad quam recusandae neque dolore quo.</h3>
+          </div>
+  
+          <div class="block mt-10">
+            <p class="py-2">Available in</p>
+              <div class="language mb-5">
+                <a class="bg-gray-600 p-1 px-4  sm:text-xs rounded-3xl text-gray-200" href="#english">English</a>
+                <a class="bg-gray-600 p-1 px-4  sm:text-xs rounded-3xl text-gray-200" href="#hindi">Hindi</a>
+                <a class="bg-gray-600 p-1 px-4  sm:text-xs rounded-3xl text-gray-200" href="#tamil">Tamil</a>
+                <a class="bg-gray-600 p-1 px-4  sm:text-xs rounded-3xl text-gray-200" href="#urdu">Urdu</a>
+              </div>
+              <button class="w-full  p-4 rounded-3xl text-xl my-4 text-green-800   bg-green-100  hover:bg-green-200 ">
+               <p> <i class="bi bi-file-earmark-pdf-fill"></i> Get Digital Access <strong>₹1199</strong></p>
+              </button>
+              <button class="w-full p-4 rounded-3xl text-xl my-4 bg-gradient-to-r  from-green-600 hover:from-green-800 to-green-800 hover:to-green-600 text-white">Buy Hard Copy <strong>₹1999</strong></button>
+            </div>
+  
+        </div>
+      </div>
+      <div  class="book-details  md:p-10 glass grid md:grid-cols-2 justify-center items-center">
+
+        <button class="w-full  p-4 rounded-3xl text-xl my-4 text-green-800   bg-green-100  hover:bg-green-200 ">
+          <p> <i class="bi bi-file-earmark-pdf-fill"></i> <a href="src/PDF/Marathi sample.pdf"> Dawnload Sample PDF</a></p>
+         </button>
+         <video width="520" height="340" controls class="m-auto">
+          <source src="movie.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Footer  -->
+      <footer class="glass ">
+        <div class="container p-6">
+          <div class="flex flex-col items-center text-center">
+            <h1 class="font-bold text-3xl my-5 text-green-800">MentorTrading</h1>
+            <span class="footer-link text-black">
+              <a class="hover:font-bold" href="index.html"> Home </a>
+              <a class="hover:font-bold" href="index.html">| Trading Books </a>
+              <a class="hover:font-bold" href="#">| Contact </a>
+              <a class="hover:font-bold" href="#">| About us </a>
+            </span>
+  
+            <p class="max-w-md mx-auto mt-4 text-gray-500 dark:text-gray-400">
+              "From bestsellers to hidden gems, discover the hottest books on our
+              website!"
+            </p>
+          </div>
+  
+          <hr class="my-10 border-gray-200 dark:border-gray-600" />
+  
+          <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+            <p class="text-sm text-gray-500">
+              © Copyright 2024. MentorTrading All Rights Reserved.
+            </p>
+  
+            <div class="flex mt-3 -mx-2 sm:mt-0">
+              <a
+                href="#"
+                class="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
+                aria-label="greendit"
+              >
+                Teams
+              </a>
+  
+              <a
+                href="#"
+                class="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
+                aria-label="greendit"
+              >
+                Privacy
+              </a>
+  
+              <a
+                href="https://www.instagram.com/modest_azad/"
+                target="_blank"
+                class="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
+                aria-label="greendit"
+              >
+                Developer
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
